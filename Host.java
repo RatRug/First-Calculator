@@ -54,7 +54,7 @@ public class Host {
                 }b.setFont(new Font( "SANS_SERIF",  Font.BOLD, 30));
                 frame.add(b);
                 //adds an actionlistener to read button clicks and sends in terminal what buttons are clicked
-                b.addActionListener(e -> System.out.println(newmethod(b)));
+                b.addActionListener(e -> System.out.println(choices(b)));
                 
             }
         }
@@ -67,7 +67,7 @@ public class Host {
 
     }
 
-    private static Object newmethod(JButton b) {
+    private static Object choices(JButton b) {
         //switch to figure out what to display or calculate
         switch(b.getText()){
             case "="://solves equation
